@@ -6,9 +6,9 @@ import io.reactivex.Observable;
 
 import static com.alexandreobs.hotfood.model.data.remote.RetrofitService.getApiService;
 
-public class CategoriaReposytory {
+public class CategoriaRepository {
 
-    Observable<Categorias> getCategorias (String chaveApi){
+   public Observable<Categorias> getCategorias (String chaveApi){
         return getApiService().GetCategoriaEndPoint(chaveApi);
     }
 
